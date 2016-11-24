@@ -1,4 +1,10 @@
 # DNS
+This application queries popular websites and measures the DNS query response times and saves them in a DB. It further allows the user to retrieve the following from the DB:
+- Average query time
+- Standard deviation of query times
+- Number of queries made so far
+- Timestamp of first and last query made
+
 Usage: DNSApp <interval(seconds between successive queries)> <db_user(default:root)> <db_passwd(default: root)>
 
 Here is the structure of files:
@@ -11,7 +17,7 @@ Here is the structure of files:
 
 Compile:
 
-Assuming lens and mysql++ is installed on the machine, I used the following
+Assuming ldns and mysql++ is installed on the machine, I used the following
 
 compiler options:
 
